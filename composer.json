@@ -1,0 +1,21 @@
+{
+    "name": "tutoz/app-salon_050522",
+    "description": "Proyecto AppSalon BlackBox RedHair",
+    "autoload": {
+        "psr-4": {
+            "MVC\\" : "./",
+            "Controllers\\":"./controllers",
+            "Model\\": "./models",
+            "Classes\\" : "./classes",
+            "Tutoz\\AppSalon050522\\": "src/"   
+        }
+    },
+    "authors": [
+        {
+            "name": "Karla Karina Rodriguez Mendez"
+        }
+    ],
+    "require": {
+        "phpmailer/phpmailer": "^6.6"
+    }
+}
