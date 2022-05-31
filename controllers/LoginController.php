@@ -6,6 +6,8 @@ use Classes\Email;
 use Model\Usuario;
 use MVC\Router;
 
+
+
 class LoginController{
     public static function login(Router $router) {//instanciamos el router
         $alertas = [];
@@ -26,9 +28,7 @@ class LoginController{
                     //Verificar password
                     if($usuario->comprobarPasswordAndVerificado($auth->password) ){
                         //autenticar el usuario
-                        if(!isset($_SESSION)) {
-                            session_start();
-                        }
+                        iniciarSession();
 
                         $_SESSION['id'] = $usuario->id;
                         $_SESSION['nombre'] = $usuario ->nombre . " " . $usuario->apellido;
@@ -61,7 +61,11 @@ class LoginController{
     }
 
     public static function logout() {
-        echo "Desde Logout";
+        iniciarSession();
+        
+        $_SESSION = [];
+        
+        header('Location: /');
     }
 
     public static function olvide(Router $router) {

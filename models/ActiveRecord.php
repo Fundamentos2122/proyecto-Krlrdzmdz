@@ -130,6 +130,13 @@ class ActiveRecord {
         return array_shift( $resultado ) ;
     }
 
+    //Realiza una consulta plana de SQL - Se utiliza cuando los metodos del modelo no sean suficientes
+    public static function SQL($query) {
+        $resultado = self::consultarSQL($query);
+        //return array_shift( $resultado ) ; //saca el primer elemento de un arreglo
+        return $resultado;
+    }
+
     // crea un nuevo registro
     public function crear() {
         // Sanitizar los datos
@@ -141,6 +148,8 @@ class ActiveRecord {
         $query .= " ) VALUES (' "; 
         $query .= join("', '", array_values($atributos));
         $query .= " ') ";
+
+       // return json_encode(['query' => $query]);
         
         // Resultado de la consulta
         $resultado = self::$db->query($query);
