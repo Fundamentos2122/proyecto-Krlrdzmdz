@@ -24,14 +24,14 @@ class Email{
         $mail->isSMTP();
 
         $mail->Host = 'smtp.office365.com';
-        $mail->SMTPAuth = true;
-        $mail->Username = 'A301468@alumnos.uaslp.mx';
-        $mail->Password = '';
+         $mail->SMTPAuth = true;
+        $mail->Username = 'BBRH4@hotmail.com';
+        $mail->Password = 'B4B4R4H4@';
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Port = 587;
 
-        $mail->setFrom('a301468@alumnos.uaslp.mx','Confirmacion BlackBox RedHair');
-        $mail->addAddress('a301468@alumnos.uaslp.mx', 'Confirmacion BlackBox RedHair');
+        $mail->setFrom('BBRH4@hotmail.com','Confirmacion BlackBox RedHair');
+        $mail->addAddress('BBRH4@hotmail.com', 'Confirmacion BlackBox RedHair');
         $mail->Subject = 'Confirma tu cuenta en BlackBox RedHair';
 
         //Usamos HTML
@@ -60,14 +60,14 @@ class Email{
 
         $mail->Host = 'smtp.office365.com';
          $mail->SMTPAuth = true;
-        $mail->Username = 'A301468@alumnos.uaslp.mx';
-        $mail->Password = 'Kiramym4lk4pon3@';
-        $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
-        $mail->Port = 587;
-
-        $mail->setFrom('a301468@alumnos.uaslp.mx','Restablecer Contraseña');
-        $mail->addAddress('a301468@alumnos.uaslp.mx', 'Restablecer Contraseña');
-        $mail->Subject = 'Restablece tu password en BlackBox RedHair';
+         $mail->Username = 'BBRH4@hotmail.com';
+         $mail->Password = 'B4B4R4H4@';
+         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+         $mail->Port = 587;
+ 
+         $mail->setFrom('BBRH4@hotmail.com','Confirmacion BlackBox RedHair');
+         $mail->addAddress('BBRH4@hotmail.com', 'Confirmacion BlackBox RedHair');
+         $mail->Subject = 'Restablece tu contraseña en BlackBox RedHair';
 
         //Usamos HTML
         //Lineas para comentar que las lineas inferiores contienen HTML
