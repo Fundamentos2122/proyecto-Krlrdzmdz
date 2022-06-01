@@ -23,7 +23,7 @@
 }
 
 .servicios {
-    @extend .citas;
+    @extend .citas; //heredar los estilos de citas
 
     .acciones {
         margin: 0;

@@ -24,9 +24,9 @@ class Email{
         $mail->isSMTP();
 
         $mail->Host = 'smtp.office365.com';
-         $mail->SMTPAuth = true;
+        $mail->SMTPAuth = true;
         $mail->Username = 'A301468@alumnos.uaslp.mx';
-        $mail->Password = 'Kiramym4lk4pon3@';
+        $mail->Password = '';
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Port = 587;
 

@@ -9,7 +9,7 @@
 
     }
 
-    .image {
+    .imagen {
         height: 20rem;
         background-image: url(../img/1.jpg);
         background-size: cover;
@@ -44,4 +44,19 @@ margin: v.$separacion 0;
         @include m.boton(v.$negro, v.$blanco);
         margin: 0;
     }
+}
+
+.barra-servicios {
+    margin-bottom: v.$separacion;
+
+    @include m.tablet {
+
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .boton{
+        margin: 0 0 1rem 0;
+    }
+
 }
