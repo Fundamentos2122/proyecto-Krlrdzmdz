@@ -65,8 +65,8 @@ class Email{
          $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
          $mail->Port = 587;
  
-         $mail->setFrom('BBRH4@hotmail.com','Confirmacion BlackBox RedHair');
-         $mail->addAddress('BBRH4@hotmail.com', 'Confirmacion BlackBox RedHair');
+         $mail->setFrom('BBRH4@hotmail.com','Restablecer contraseña en BlackBox RedHair');
+         $mail->addAddress('BBRH4@hotmail.com', 'Restablecer contraseña en BlackBox RedHair');
          $mail->Subject = 'Restablece tu contraseña en BlackBox RedHair';
 
         //Usamos HTML
